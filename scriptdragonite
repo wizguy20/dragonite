@@ -1,0 +1,319 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Startup = Instance.new("ImageLabel")
+local OpenandClose = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ESPbox = Instance.new("TextButton")
+local SilentAimbox = Instance.new("TextButton")
+local Hitboxesbox = Instance.new("TextButton")
+local Creditsbox = Instance.new("TextButton")
+local ESPFrame = Instance.new("Frame")
+local SilentFrame = Instance.new("Frame")
+local HitFrame = Instance.new("Frame")
+local CreditFrame = Instance.new("Frame")
+local welcomebox = Instance.new("Frame")
+local introductionbox = Instance.new("TextLabel")
+local introductionbox_2 = Instance.new("TextLabel")
+local introductionbox_3 = Instance.new("TextLabel")
+local login = Instance.new("Frame")
+local bar69 = Instance.new("TextLabel")
+local username = Instance.new("TextBox")
+local pass = Instance.new("TextBox")
+local login_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Startup.Name = "Startup"
+Startup.Parent = ScreenGui
+Startup.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Startup.BackgroundTransparency = 1.000
+Startup.Position = UDim2.new(0.441169471, 0, 0.286060631, 0)
+Startup.Size = UDim2.new(0, 254, 0, 242)
+Startup.Visible = false
+Startup.Image = "http://www.roblox.com/asset/?id=30358124"
+
+OpenandClose.Name = "OpenandClose"
+OpenandClose.Parent = ScreenGui
+OpenandClose.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+OpenandClose.BorderColor3 = Color3.fromRGB(45, 45, 45)
+OpenandClose.BorderSizePixel = 4
+OpenandClose.Position = UDim2.new(0, 0, 0.699393928, 0)
+OpenandClose.Size = UDim2.new(0, 157, 0, 41)
+OpenandClose.Font = Enum.Font.SourceSansBold
+OpenandClose.Text = "Open"
+OpenandClose.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenandClose.TextSize = 17.000
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Frame.BorderSizePixel = 5
+Frame.Position = UDim2.new(0.25, 0, 0.332121223, 0)
+Frame.Size = UDim2.new(0, 437, 0, 284)
+Frame.Visible = false
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 437, 0, 36)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Dragonite"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+ScrollingFrame.Position = UDim2.new(0, 0, 0.126760557, 0)
+ScrollingFrame.Size = UDim2.new(0, 80, 0, 248)
+ScrollingFrame.ScrollBarThickness = 8
+
+ESPbox.Name = "ESPbox"
+ESPbox.Parent = ScrollingFrame
+ESPbox.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ESPbox.BorderColor3 = Color3.fromRGB(45, 45, 45)
+ESPbox.Size = UDim2.new(0, 70, 0, 60)
+ESPbox.Font = Enum.Font.SourceSansBold
+ESPbox.LineHeight = 0.900
+ESPbox.Text = "ESP"
+ESPbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPbox.TextSize = 14.000
+
+SilentAimbox.Name = "SilentAimbox"
+SilentAimbox.Parent = ScrollingFrame
+SilentAimbox.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+SilentAimbox.BorderColor3 = Color3.fromRGB(45, 45, 45)
+SilentAimbox.Position = UDim2.new(0, 0, 0.105633803, 0)
+SilentAimbox.Size = UDim2.new(0, 70, 0, 60)
+SilentAimbox.Font = Enum.Font.SourceSansBold
+SilentAimbox.LineHeight = 0.900
+SilentAimbox.Text = "SilentAim"
+SilentAimbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+SilentAimbox.TextSize = 14.000
+
+Hitboxesbox.Name = "Hitboxesbox"
+Hitboxesbox.Parent = ScrollingFrame
+Hitboxesbox.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Hitboxesbox.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Hitboxesbox.Position = UDim2.new(0, 0, 0.211267605, 0)
+Hitboxesbox.Size = UDim2.new(0, 70, 0, 60)
+Hitboxesbox.Font = Enum.Font.SourceSansBold
+Hitboxesbox.LineHeight = 0.900
+Hitboxesbox.Text = "Hitboxes"
+Hitboxesbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hitboxesbox.TextSize = 14.000
+
+Creditsbox.Name = "Creditsbox"
+Creditsbox.Parent = ScrollingFrame
+Creditsbox.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+Creditsbox.BorderColor3 = Color3.fromRGB(45, 45, 45)
+Creditsbox.Position = UDim2.new(0, 0, 0.315140873, 0)
+Creditsbox.Size = UDim2.new(0, 70, 0, 60)
+Creditsbox.Font = Enum.Font.SourceSansBold
+Creditsbox.LineHeight = 0.900
+Creditsbox.Text = "Credits"
+Creditsbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+Creditsbox.TextSize = 14.000
+
+ESPFrame.Name = "ESPFrame"
+ESPFrame.Parent = Frame
+ESPFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+ESPFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+ESPFrame.Position = UDim2.new(0.183066368, 0, 0.126760557, 0)
+ESPFrame.Size = UDim2.new(0, 357, 0, 248)
+
+SilentFrame.Name = "SilentFrame"
+SilentFrame.Parent = Frame
+SilentFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+SilentFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+SilentFrame.Position = UDim2.new(0.183066368, 0, 0.126760557, 0)
+SilentFrame.Size = UDim2.new(0, 357, 0, 248)
+
+HitFrame.Name = "HitFrame"
+HitFrame.Parent = Frame
+HitFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+HitFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+HitFrame.Position = UDim2.new(0.183066368, 0, 0.126760557, 0)
+HitFrame.Size = UDim2.new(0, 357, 0, 248)
+
+CreditFrame.Name = "CreditFrame"
+CreditFrame.Parent = Frame
+CreditFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+CreditFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+CreditFrame.Position = UDim2.new(0.183066368, 0, 0.126760557, 0)
+CreditFrame.Size = UDim2.new(0, 357, 0, 248)
+
+welcomebox.Name = "welcomebox"
+welcomebox.Parent = Frame
+welcomebox.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+welcomebox.BorderColor3 = Color3.fromRGB(45, 45, 45)
+welcomebox.Position = UDim2.new(0.183066368, 0, 0.126760557, 0)
+welcomebox.Size = UDim2.new(0, 357, 0, 248)
+
+introductionbox.Name = "introductionbox"
+introductionbox.Parent = welcomebox
+introductionbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+introductionbox.BackgroundTransparency = 1.000
+introductionbox.Position = UDim2.new(0.106442578, 0, 0.157258064, 0)
+introductionbox.Size = UDim2.new(0, 271, 0, 58)
+introductionbox.Font = Enum.Font.SourceSansBold
+introductionbox.Text = "Hello. Welcome to dragonite hub. This is a script hub for deadzone."
+introductionbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+introductionbox.TextScaled = true
+introductionbox.TextSize = 14.000
+introductionbox.TextWrapped = true
+
+introductionbox_2.Name = "introductionbox"
+introductionbox_2.Parent = welcomebox
+introductionbox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+introductionbox_2.BackgroundTransparency = 1.000
+introductionbox_2.Position = UDim2.new(0.106442578, 0, 0.391129017, 0)
+introductionbox_2.Size = UDim2.new(0, 271, 0, 58)
+introductionbox_2.Font = Enum.Font.SourceSansBold
+introductionbox_2.Text = "Made by : wizkids20"
+introductionbox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+introductionbox_2.TextSize = 14.000
+introductionbox_2.TextWrapped = true
+
+introductionbox_3.Name = "introductionbox"
+introductionbox_3.Parent = welcomebox
+introductionbox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+introductionbox_3.BackgroundTransparency = 1.000
+introductionbox_3.Position = UDim2.new(0.106442578, 0, 0.45161289, 0)
+introductionbox_3.Size = UDim2.new(0, 271, 0, 58)
+introductionbox_3.Font = Enum.Font.SourceSansBold
+introductionbox_3.Text = "Made by : mr wiz#3609"
+introductionbox_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+introductionbox_3.TextSize = 14.000
+introductionbox_3.TextWrapped = true
+
+login.Name = "login"
+login.Parent = ScreenGui
+login.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+login.BorderColor3 = Color3.fromRGB(45, 45, 45)
+login.BorderSizePixel = 4
+login.Position = UDim2.new(0.487974674, 0, 0.166427553, 0)
+login.Size = UDim2.new(0, 282, 0, 341)
+
+bar69.Name = "bar69"
+bar69.Parent = login
+bar69.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+bar69.BorderSizePixel = 0
+bar69.Size = UDim2.new(0, 282, 0, 33)
+bar69.Font = Enum.Font.SourceSansBold
+bar69.Text = "Dragonite Login"
+bar69.TextColor3 = Color3.fromRGB(0, 0, 0)
+bar69.TextSize = 14.000
+
+username.Name = "username"
+username.Parent = login
+username.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+username.BackgroundTransparency = 0.300
+username.Position = UDim2.new(0.120567374, 0, 0.225806445, 0)
+username.Size = UDim2.new(0, 200, 0, 50)
+username.Font = Enum.Font.SourceSans
+username.Text = "Username"
+username.TextColor3 = Color3.fromRGB(0, 0, 0)
+username.TextSize = 14.000
+
+pass.Name = "pass"
+pass.Parent = login
+pass.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+pass.BackgroundTransparency = 0.300
+pass.Position = UDim2.new(0.120567374, 0, 0.524926662, 0)
+pass.Size = UDim2.new(0, 200, 0, 50)
+pass.Font = Enum.Font.SourceSans
+pass.Text = "Password"
+pass.TextColor3 = Color3.fromRGB(0, 0, 0)
+pass.TextSize = 14.000
+
+login_2.Name = "login"
+login_2.Parent = login
+login_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+login_2.BackgroundTransparency = 0.300
+login_2.Position = UDim2.new(0, 19, 0, 260)
+login_2.Size = UDim2.new(0, 238, 0, 50)
+login_2.SizeConstraint = Enum.SizeConstraint.RelativeYY
+login_2.Font = Enum.Font.SourceSans
+login_2.Text = "Login"
+login_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+login_2.TextSize = 14.000
+
+-- Scripts:
+
+local function PXBS_fake_script() -- ScreenGui.sound 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	wait(0.5)
+	script.Parent.Sound.Playing = true
+	wait(1.8)
+	local dragon = script.Parent.Startup
+	
+	dragon.ImageTransparency = 0.2
+	
+	wait(0.1)
+	
+	dragon.ImageTransparency = 0.3
+	
+	wait(0.1)
+	
+	dragon.ImageTransparency = 0.5
+	
+	wait(0.1)
+	
+	dragon.ImageTransparency = 0.6
+	
+	wait(0.1)
+	
+	dragon.ImageTransparency = 0.85
+	
+	wait(.05)
+	
+	dragon.ImageTransparency = 1
+end
+coroutine.wrap(PXBS_fake_script)()
+local function PYTFX_fake_script() -- OpenandClose.LocalScript 
+	local script = Instance.new('LocalScript', OpenandClose)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Text == "Open" then
+			script.Parent.Text = "Close"
+			script.Parent.Parent.Frame.Visible = true
+		else
+			script.Parent.Text = "Open"
+			script.Parent.Parent.Frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(PYTFX_fake_script)()
+local function DFSMAXS_fake_script() -- ESPbox.LocalScript 
+	local script = Instance.new('LocalScript', ESPbox)
+
+	
+	local home = script.Parent.Parent.Parent
+	
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		home.SilentFrame.Visible = false
+		home.ESPFrame.Visible = true
+		home.CreditFrame.Visible = false
+		home.HitFrame.Visible = false
+	end)
+end
+coroutine.wrap(DFSMAXS_fake_script)()
+local function TCMQJ_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	
+end
+coroutine.wrap(TCMQJ_fake_script)()
